@@ -1,0 +1,25 @@
+.nopage_container {
+  width: auto;
+  height: 100vh;
+  padding: 2rem;
+  text-align: center;
+  color: #070707;
+  display: block;
+
+  p {
+    font-size: 7rem;
+    font-weight: 100;
+  }
+  h3 {
+    margin-top: 0;
+  }
+
+  .gotoHome {
+    padding: 0.7rem 1rem;
+    background-color: #ed6e2b;
+    color: white;
+  }
+  .gotoHome:hover {
+    background-color: #ed6f2be0;
+  }
+}

@@ -1,0 +1,35 @@
+@import "CommonPageFormat";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  li {
+    list-style: none;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+html::-webkit-scrollbar {
+  width: 6px;
+}
+html::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(180deg, #8a9bb2 0%, #8a9bb2 99%);
+  box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+  border-radius: $borderRadius100;
+}
+html::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: $borderRadius100;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(180deg, #8a9bb2 0%, #8a9bb2 99%);
+  box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+  border-radius: $borderRadius100;
+}

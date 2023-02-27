@@ -1,0 +1,29 @@
+@import "variables";
+
+.sidenavul {
+  display: flex;
+  width: 100%;
+  height: 98%;
+  padding: 0;
+  flex-direction: column;
+  box-shadow: $Sidebar_BoxShadow;
+}
+
+.sidenavul li {
+  width: 100%;
+  font-size: 0.9rem;
+  padding: 0.7rem 1rem;
+  transition: $transition;
+}
+a {
+  text-decoration: none;
+  color: $Color2;
+}
+.sidenavul li:hover {
+  background-color: $Color10;
+  transition: $transition;
+}
+
+.sidenavul li:active {
+  background-color: $Color10;
+}

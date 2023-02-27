@@ -1,0 +1,150 @@
+@import "variables";
+
+.LoginMainDiv {
+  display: grid;
+  height: 100vh;
+  width: $width;
+  grid:
+    "LoginSidebar ImageLogin" 1fr
+    / 480px 1fr;
+  gap: 0px;
+  background-color: $Color15;
+  color: $Color28;
+}
+
+.LoginSidebar {
+  grid-area: LoginSidebar;
+  display: grid;
+  height: 100vh;
+  padding: 1rem;
+  font-family: $fontfamily;
+  place-items: center;
+
+  .Loginheader {
+    width: 7rem;
+    height: 7rem;
+    border-radius: $width;
+    font-size: 4.5rem;
+    display: grid;
+    place-items: center;
+    border: $Border $Color3;
+  }
+
+  .LoginHeader,
+  h2 {
+    text-align: center;
+  }
+
+  form {
+    padding: 2rem;
+    width: $width;
+    height: $height;
+  }
+  form input {
+    width: $width;
+    padding: 2rem;
+    padding: 0.9rem;
+    font-size: 1rem;
+    background: $ColorTransparent;
+    border: $Border $Color17;
+    border-radius: $borderRadius1;
+    color: $Color2;
+  }
+
+  div {
+    margin-top: 2rem;
+  }
+
+  form input:focus {
+    border: $Border $Color2;
+    outline: $Outline $Color20;
+  }
+  .invalid input {
+    border: $Border $Color18;
+  }
+  form p {
+    margin-top: 1rem;
+  }
+
+  .switchBtn {
+    width: $width;
+    border: $BorderNone;
+    background-color: $ColorTransparent;
+    color: $Color2;
+    margin-top: 2rem;
+    text-align: center;
+    cursor: pointer;
+    padding: 0.9rem;
+    transition: $transition;
+  }
+  .switchBtn:hover {
+    background-color: $Color16;
+    transition: $transition;
+  }
+}
+
+.loginBtn {
+  margin-top: 2rem;
+  width: $width;
+  padding: 0.9rem;
+  font-size: 1rem;
+  background-color: $Color22;
+  border: none;
+  color: $Color2;
+  border-radius: $borderRadius1;
+  transition: $transition;
+}
+.loginBtn:hover {
+  background-color: $Color23;
+  transition: $transition;
+  cursor: pointer;
+}
+.loginBtn:disabled,
+.loginBtn:focus:disabled,
+.loginBtn:hover:disabled,
+.loginBtn:active:disabled {
+  background: $Color11;
+  border-color: $Color11;
+  color: $Color7;
+  cursor: not-allowed;
+}
+
+//IMAGE DIV STYLING
+
+.ImageLogin {
+  grid-area: ImageLogin;
+  img {
+    width: $imgWidth;
+    height: $imgHeight;
+  }
+}
+
+@media only screen and (max-width: 560px) and (min-width: 200px) {
+  .LoginMainDiv {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 968px) and (min-width: 560px) {
+  .LoginMainDiv {
+    display: grid;
+    grid:
+      "LoginSidebar ImageLogin" 1fr
+      / 400px 1fr;
+  }
+  .LoginSidebar h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 1060px) and (min-width: 968px) {
+  .LoginMainDiv {
+    display: grid;
+    grid:
+      "LoginSidebar ImageLogin" 1fr
+      / 440px 1fr;
+  }
+  .LoginSidebar h2 {
+    font-size: 1.5rem;
+  }
+}

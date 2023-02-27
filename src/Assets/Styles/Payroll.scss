@@ -1,0 +1,113 @@
+@import "variables";
+
+//PAYROLL PAGE STYLING
+.bedSection {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  margin-top: 2rem;
+}
+.bedSection input {
+  width: 70%;
+  padding: 0.3rem 1rem;
+  color: black;
+}
+
+//CREATE PAYROLL STYLING
+
+.table1 input,
+.table1 select {
+  width: 70%;
+  padding: 0.2rem 0.7rem;
+  color: $Color8;
+}
+.table1 td {
+  padding: 0.5rem;
+}
+
+.resetBtn,
+.createpayroll,
+.addAllowance_td button,
+.totalAllowance_td button,
+.createpayroll_btn {
+  padding: 0.1rem 0.7rem;
+  border: $BorderNone;
+  background-color: #ffc107;
+  border-radius: 28px;
+  right: 0;
+  padding: 7px 20px 7px 20px;
+  text-decoration: none;
+  font-size: 0.75rem;
+  transition: $transition;
+}
+form .table1 {
+  margin-top: 1rem;
+  padding: 2rem;
+}
+.table1 {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  padding: 2rem;
+  font-size: 0.8rem;
+  transition: all ease-in-out 0.7s;
+}
+.form_table1 {
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+.table_form2,
+.table_form3 {
+  display: inline-block;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: $borderRadius1;
+  width: 49%;
+  margin: 0 0.3rem;
+  padding: 2rem 1rem;
+  border: 1px solid #ccc;
+  table {
+    width: 100%;
+    input {
+      width: 95%;
+      padding: 0.2rem 0.7rem;
+    }
+  }
+}
+
+.Allowance_td {
+  margin: 2rem auto;
+}
+
+.addAllowance_td button {
+  background-color: #6c757d;
+  color: white;
+}
+.totalAllowance_td button {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.table_form4 {
+  margin: 3rem auto;
+  width: 70%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: $borderRadius1;
+  padding: 2rem;
+  table {
+    width: 100%;
+    tr td {
+      padding: 0.2rem 0;
+    }
+    input,
+    select {
+      width: 100%;
+      padding: 0.2rem 0.7rem;
+    }
+  }
+
+  .createpayroll_btn {
+    background-color: #28a745;
+    color: white;
+    margin-top: 1rem;
+    float: right;
+  }
+}

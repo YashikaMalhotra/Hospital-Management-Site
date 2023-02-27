@@ -1,0 +1,250 @@
+@import "variables";
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(4);
+  grid-template-rows: repeat(3, 1fr) repeat(2, 3fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div-1 {
+  grid-area: 1 / 1 / 10 / 5;
+}
+.div-2 {
+  grid-area: 1 / 1 / 2 / 2;
+  color: $dash_color1;
+}
+.div-3 {
+  grid-area: 1 / 2 / 2 / 3;
+  color: $dash_color2;
+}
+.div-4 {
+  grid-area: 1 / 3 / 2 / 4;
+  color: $dash_color3;
+}
+.div-5 {
+  grid-area: 1 / 4 / 2 / 5;
+  color: $dash_color4;
+}
+.div-6 {
+  grid-area: 2 / 1 / 3 / 2;
+  color: $dash_color5;
+}
+.div-7 {
+  grid-area: 2 / 2 / 3 / 3;
+  color: $dash_color6;
+}
+.div-8 {
+  grid-area: 2 / 3 / 3 / 4;
+  color: $dash_color7;
+}
+.div-9 {
+  grid-area: 2 / 4 / 3 / 5;
+  color: $dash_color8;
+}
+.div-10 {
+  grid-area: 3 / 1 / 4 / 2;
+  color: $dash_color9;
+}
+.div-11 {
+  grid-area: 3 / 2 / 4 / 3;
+  color: $dash_color10;
+}
+.div-12 {
+  grid-area: 3 / 3 / 4 / 4;
+}
+.div-13 {
+  grid-area: 4 / 1 / 5 / 4;
+}
+.div-14 {
+  grid-area: 4 / 4 / 5 / 5;
+}
+.div-15 {
+  grid-area: 5 / 1 / 6 / 5;
+}
+
+.div-2,
+.div-3,
+.div-4,
+.div-5,
+.div-6,
+.div-7,
+.div-8,
+.div-9,
+.div-10,
+.div-11,
+.div-12,
+.div-13,
+.div-14,
+.div-15 {
+  padding: 0.8rem 1.2rem;
+  border-radius: 5px;
+  margin: 0.7rem 1rem;
+  border-radius: 10px;
+  box-shadow: $Dashboard_BoxShadow;
+
+  .divs-h2 {
+    h1 {
+      display: flex;
+      justify-content: space-between;
+    }
+    h1 p {
+      font-size: 2.5rem;
+    }
+    .divs_icon {
+      font-size: 4.4rem;
+      color: $Color1;
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) and (min-width: 200px) {
+  .parent {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr) repeat(2, 3fr) repeat(1, 1fr);
+  }
+
+  .div-1 {
+    grid-area: 1/1/10/5;
+  }
+  .div-2 {
+    grid-area: 1/1/1/5;
+  }
+  .div-3 {
+    grid-area: 2/1/2/5;
+  }
+  .div-4 {
+    grid-area: 3/1/3/5;
+  }
+  .div-5 {
+    grid-area: 4/1/4/5;
+  }
+  .div-6 {
+    grid-area: 5/1/5/5;
+  }
+  .div-7 {
+    grid-area: 6/1/6/5;
+  }
+  .div-8 {
+    grid-area: 7/1/7/5;
+  }
+  .div-9 {
+    grid-area: 8/1/8/5;
+  }
+  .div-10 {
+    grid-area: 8/1/8/5;
+  }
+  .div-11 {
+    grid-area: 8/1/8/5;
+  }
+  .div-12 {
+    grid-area: 8/1/8/5;
+  }
+  .div-13 {
+    grid-area: 9/1/9/3;
+  }
+  .div-14 {
+    grid-area: 10/1/10/5;
+  }
+  .div-15 {
+    grid-area: 11/1/11/5;
+  }
+}
+
+@media only screen and (max-width: 890px) and (min-width: 600px) {
+  .parent {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr) repeat(2, 3fr);
+  }
+
+  .div-1 {
+    grid-area: 1/1/10/5;
+  }
+  .div-2 {
+    grid-area: 1/1/2/3;
+  }
+  .div-3 {
+    grid-area: 1/3/2/5;
+  }
+  .div-4 {
+    grid-area: 2/ 1 / 2 / 3;
+  }
+  .div-5 {
+    grid-area: 2/3/2/5;
+  }
+  .div-6 {
+    grid-area: 3/1/3/3;
+  }
+  .div-7 {
+    grid-area: 3/3/3/5;
+  }
+  .div-8 {
+    grid-area: 4/1/4/3;
+  }
+  .div-9 {
+    grid-area: 4/3/4/5;
+  }
+
+  .div-13 {
+    grid-area: 5/1/5/3;
+  }
+  .div-14 {
+    grid-area: 5/3/5/5;
+  }
+  .div-15 {
+    grid-area: 6/1/6/5;
+  }
+}
+@media only screen and (max-width: 1130px) and (min-width: 890px) {
+  .parent {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr) repeat(2, 3fr);
+  }
+
+  .div-1 {
+    grid-area: 1 / 1 / 10 / 5;
+  }
+  .div-2 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .div-3 {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .div-4 {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+  .div-5 {
+    grid-area: 2/1/2/1;
+  }
+  .div-6 {
+    grid-area: 2/2/3/2;
+  }
+  .div-7 {
+    grid-area: 2/3/3/3;
+  }
+  .div-8 {
+    grid-area: 3/1/3/1;
+  }
+  .div-9 {
+    grid-area: 3/2/3/4;
+  }
+  .div-10 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  .div-11 {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+  .div-12 {
+    grid-area: 3 / 3 / 4 / 4;
+  }
+  .div-13 {
+    grid-area: 4/1/5/3;
+  }
+  .div-14 {
+    grid-area: 4/4/5/3;
+  }
+  .div-15 {
+    grid-area: 5/1/6/5;
+  }
+}

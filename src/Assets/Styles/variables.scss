@@ -1,0 +1,102 @@
+// COMMON SCSS FOR ALL FILES //
+
+$width: 100%;
+$height: 100%;
+$imgWidth: 100%;
+$imgHeight: 100%;
+$fontfamily: "Helvetica neue", Helvetica, Arial, sans-serif;
+$transition: all ease-in-out 0.3s;
+
+$Sidebar_BoxShadow: #8a9bb2 0px 25px 50px -12px;
+$Dashboard_BoxShadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+$CommonModal_BoxShadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+$BoxShadow4: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+$BoxShadow5: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+$BoxShadow6: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+  rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+$boxShadow7: rgba(27, 31, 35, 0.04) 0px 1px 0px,
+  rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+$boxShadow8: rgba(150, 27, 27, 0.849);
+$boxShadhow9: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+$boxShadhow10: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+$boxShadhow11: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+$boxShadhow12: rgb(33 35 38 / 10%) 0px 10px 10px -10px;
+
+$Border: 1px solid;
+$BorderNone: none;
+$Outline: 1px solid;
+
+$dash_color1: #ba79cb;
+$dash_color2: #ffa812;
+$dash_color3: #1fa86e;
+$dash_color4: #f56d79;
+$dash_color5: #00b29e;
+$dash_color6: #ed3b83;
+$dash_color7: #00c0ef;
+$dash_color8: #be79cb;
+$dash_color9: #00a65a;
+$dash_color10: #95641e;
+
+$Color1: #e8e8e9;
+$Color2: #adbbc3;
+$Color3: #666666;
+$Color4: white;
+$Color5: #dadada;
+$Color6: #3c3f43;
+$Color7: #ffffff;
+$Color8: black;
+$Color9: orange;
+$Color10: #353f5f;
+$Color11: #ccc;
+$Color12: #28a745;
+$Color13: #2bc04df1;
+$Color14: #e4e4e4;
+$ColorTransparent: transparent;
+$Color15: #11283f;
+$Color16: #17a3b875;
+
+$Color17: #51585d;
+$Color18: rgb(161, 66, 66);
+$Color19: #e1e1e1;
+$Color20: rgb(9, 193, 255);
+$Color21: #3187ff;
+$Color22: #17a2b8;
+$Color23: #137d8d;
+$Color24: #1f4bdb;
+$Color25: #f7f4f4;
+$Color26: #e5e5e5;
+$Color27: #6980c4;
+$Color28: #ddd;
+
+//$fontColor1: #e8e8e9;
+//$fontColor2: adbbc3;
+//$fontColor3: #666666;
+//$fontColor4: white;
+//$fontColor5: #dadada;
+//$fontColor6: #3c3f43;
+//$fontColor7: #ffffff;
+//$fontColor8: black;
+//$fontColor9: orange;
+
+//$bgColor1: #353f5f;
+//$bgColor2: #ccc;
+//$bgColor3: #28a745;
+//$bgColor4: #2bc04df1;
+//$bgColor5: #e4e4e4;
+//$bgColorTransparent: transparent;
+//$BgColor6: #11283f;
+//$BgColor7: #17a3b875;
+
+//$borderColor1: #51585d;
+//$borderColor2: rgb(161, 66, 66);
+//$borderColor3: #e1e1e1;
+
+//$outlineColor1: rgb(9, 193, 255);
+//$outlineColor2: #3187ff;
+//$btnColor1: #17a2b8;
+//$btnColor2: #137d8d;
+
+$borderRadius1: 5px;
+$borderRadius2: 100px;
+
+$scrollbgImage: linear-gradient(180deg, #2c2e3e 0%, #11283f 99%);
