@@ -5,11 +5,6 @@ import {DummyData} from "./Pages/DummyPage"
 import {DummyBedData} from "./Pages/Manage Hospital Pages/Bed Alot/Dummy_BedData"
 import {DummyMedData} from "./Pages/Manage Hospital Pages/Medicine/Dummy_MedData"
 import {DummyPatientData} from "./Pages/Patient/Dummy_PatientData";
-import "@progress/kendo-theme-material/dist/all.css";
-import "hammerjs";
-import Donut from "../Charts/Donut"
-import Line from "../Charts/Line"
-import Lines from "../Charts/Lines"
 
 const Dashboard=() => {
   var bedNum,
@@ -153,13 +148,10 @@ const Dashboard=() => {
         </div>
         {/*--------------------------------------------------------------------*/}
         <div className="div-13">Patient Graph
-          <Line />
         </div>
         <div className="div-14">Reports
-          <Donut />
         </div>
         <div className="div-15">Patients
-          <Lines />
         </div>
       </div>
     </>
